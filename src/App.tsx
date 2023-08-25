@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Pyro from "./components/Pyro";
-import { Wave, Random } from "react-animated-text";
 import Marquee from "react-fast-marquee";
 
 function App() {
