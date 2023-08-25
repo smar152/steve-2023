@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "homepage": "https://smar152.github.io/steve-2023/",
+  "homepage": "https://smar152.github.io/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
