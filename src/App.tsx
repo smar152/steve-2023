@@ -11,7 +11,7 @@ function App() {
   const [marqueeText, setMarqueeText] = useState("1. Χρόνια πολλά! ");
 
   useEffect(() => {
-    let timer: NodeJS.Timer;
+    let timer: number;
     if (clicked) {
       timer = setInterval(() => {
         setSeconds((seconds) => seconds + 1);
