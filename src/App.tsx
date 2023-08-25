@@ -6,9 +6,9 @@ import Marquee from "react-fast-marquee";
 function App() {
   const [clicked, setClicked] = useState(false);
   const [finished, setFinished] = useState(false);
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(2);
   const [text, setText] = useState("");
-  const [marqueeText, setMarqueeText] = useState("");
+  const [marqueeText, setMarqueeText] = useState("1. Χρόνια πολλά! ");
 
   useEffect(() => {
     let timer: NodeJS.Timer;
@@ -24,16 +24,16 @@ function App() {
   });
 
   useEffect(() => {
-    if (seconds === 30) {
-      setSeconds(0);
+    if (seconds === 32) {
+      setSeconds(2);
       setClicked(false);
       setFinished(true);
-      setMarqueeText("");
+      setMarqueeText("1. Χρόνια πολλά! ");
     }
   }, [seconds]);
 
   useEffect(() => {
-    if (seconds === 0) {
+    if (seconds === 2) {
       setText("Και που λες");
     }
     if (seconds === 6) {
