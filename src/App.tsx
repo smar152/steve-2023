@@ -21,16 +21,7 @@ function App() {
     return () => {
       clearInterval(timer);
     };
-  });
-
-  useEffect(() => {
-    if (seconds === 32) {
-      setSeconds(2);
-      setClicked(false);
-      setFinished(true);
-      setMarqueeText("1. Χρόνια πολλά! ");
-    }
-  }, [seconds]);
+  }, [clicked, seconds]);
 
   useEffect(() => {
     if (seconds === 2) {
@@ -47,6 +38,12 @@ function App() {
     }
     if (seconds === 24) {
       setText("ΧΡΟΝΙΑ ΠΟΛΛΑΑΑΑΑΑΑΑ");
+    }
+    if (seconds === 32) {
+      setSeconds(2);
+      setClicked(false);
+      setFinished(true);
+      setMarqueeText("1. Χρόνια πολλά! ");
     }
   }, [seconds]);
 
